@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <h1>Cadastro de Usuário</h1>
+        <hr>
+        <!--container-->
+        <form name="form_cadastro_usuario" action="salvar-usuario.html" method="post">
+            
+            <fieldset>
+            <legend><strong>Informações Pessoais</strong></legend>
+            <label for="nome">Nome: </label>
+            <input id="nome" name="nome" required>
+            <label for="sobrenome">Sobrenome: </label>
+            <input id="sobrenome" name="sobrenome" required><br><br>
+
+            <label for="E-mail">E-mail: </label>
+            <input id="E-mail" name="E-mail" required type="email"> <br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend><strong>Informações de Usuário</strong></legend>
+            <label for="nomee_usuario">Nome de Usuario: </label>
+            <input id="nomee_usuario" name="nomee_usuario" required><br><br>
+
+            <label for="senha">Senha: </label>
+            <input id="senha" name="senha" type="password" required>
+            <label for="confirmação de senha">Confirmação de Senha: </label>
+            <input id="confirmação de senha" name="confirmação de senha" type="password" required><br><br>
+            
+            <label for="dica de senha">Dica de Senha: </label>
+            <input id="dica de senha" name="senha" required>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend><strong>Redes Sociais</strong></legend>
+            <img src="lin.png"><label for="linkedin"><em> linkedin.com/in/</em></label> 
+            <input id="linkedin" name="linkedin"><br>
+
+            <img src="face.png"><label for="facebook"><em> facebook.com/</em></label> 
+            <input id="facebook" name="facebook"><br>
+
+            <img src="insta.png"><label for="instagram"><em> instagram.com/</em></label> 
+            <input id="instagram" name="instragram"><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>Contrato</strong></legend>
+                Aceita ods termos do contrato ?
+                <br>
+                <input type="radio" name="contrato">Sim
+                &nbsp; &nbsp;
+                <input type="radio" name="contrato">Não
+                <br>
+                Aceita esse outro contratro ?
+                <select name="contrato2">
+                    <option></option>
+                    <option>Sim</option>
+                    <option>Com Certeza</option>
+                </select>
+
+            </fieldset>
+            <button>Salvar</button>
+        </form>
+        <hr>
+    </body>
+</html>
